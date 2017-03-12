@@ -1,0 +1,21 @@
+PODS:
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MTLManagedObjectAdapter (1.0.3):
+    - Mantle (~> 2.0)
+    - MTLManagedObjectAdapter/extobjc (= 1.0.3)
+  - MTLManagedObjectAdapter/extobjc (1.0.3):
+    - Mantle (~> 2.0)
+
+DEPENDENCIES:
+  - Mantle (~> 2.0)
+  - MTLManagedObjectAdapter (~> 1.0)
+
+SPEC CHECKSUMS:
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
+
+PODFILE CHECKSUM: 239f09fd829d8bbe60bf6fec87f659de9d94c7eb
+
+COCOAPODS: 1.2.0

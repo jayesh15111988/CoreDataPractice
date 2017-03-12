@@ -1,0 +1,21 @@
+{
+    "products": [{
+                 "average_overall_rating": 4.5,
+                 "has_stock": true,
+                 "image_url": "http://www.sample.com/image1.jpg",
+                 "list_price": 45.6,
+                 "category_id": "3455"
+                 }, {
+                 "average_overall_rating": 5.0,
+                 "has_stock": false,
+                 "image_url": "http://www.sample.com/image2.jpg",
+                 "list_price": 234.4,
+                 "category_id": "4545"
+                 }, {
+                 "average_overall_rating": 3.8,
+                 "has_stock": true,
+                 "image_url": "http://www.sample.com/image2.jpg",
+                 "list_price": 300.1,
+                 "category_id": "1299"
+                 }]
+}

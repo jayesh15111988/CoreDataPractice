@@ -10,16 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Load the data either from file or Core database storage.
+    loadData()
+}
+
+func loadData() {
+    let productsFetcher = ProductsFetcher()
+    var products: [Product] = []
+    // Check if data has already been stored in the database. If yes, retrieve the specific record
+    if NSUserDefaults.standardUserDefaults().boolForKey(ProductStorageIndicatorKey.ProductStored.rawValue) == true {
+        products = productsFetcher.fetchProductsWith("1299")
+    } else {
+        // If data is not present, read if from the file.
+        products = productsFetcher.fetchProducts()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    // Print the Debug information.
+    print("Products Count \(products.count)")
+    print(products)
+}
 }
 

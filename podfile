@@ -1,0 +1,14 @@
+platform :ios, ‘8.0’
+inhibit_all_warnings!
+use_frameworks!
+
+xcodeproj 'CoreDataPractice'
+
+def shared_pods    
+    pod 'Mantle', '~> 2.0'    
+    pod 'MTLManagedObjectAdapter', '~> 1.0'
+end
+
+target 'CoreDataPractice' do
+    shared_pods
+end
